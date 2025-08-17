@@ -5,7 +5,7 @@ import java.util.*;
 import javax.swing.border.Border;
 
 
-public class MiniEmojiMemoryGame extends JFrame {
+public class EmojiMemoryGame extends JFrame {
 
     private JLayeredPane layeredPane;
     private JLabel timerLabel, scoreLabel;
@@ -14,7 +14,7 @@ public class MiniEmojiMemoryGame extends JFrame {
     private java.util.List<JButton> selectedButtons = new ArrayList<>();
     private final String[] emojis = {"🐶", "🍕", "🌟", "🎈", "🎮", "🎯"};
 
-    public MiniEmojiMemoryGame() {
+    public EmojiMemoryGame() {
         setTitle("Emoji Memory Game");
         setSize(800, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -54,7 +54,7 @@ public class MiniEmojiMemoryGame extends JFrame {
     layeredPane.removeAll();
 
     // Background image
-    JLabel bgLabel = createBackgroundLabel("C:/Users/Ayesha/Desktop/khushi project/levelimage.jpg");
+    JLabel bgLabel = createBackgroundLabel("C:/Users/Ayesha/Desktop/khushi project/memory game/levelimage.jpg");
     layeredPane.add(bgLabel, Integer.valueOf(0));
 
     // Panel to hold title and button
@@ -113,7 +113,7 @@ public class MiniEmojiMemoryGame extends JFrame {
     private void showLevelSelection() {
         layeredPane.removeAll();
 
-        JLabel bgLabel = createBackgroundLabel("C:/Users/Ayesha/Desktop/khushi project/levelimage.jpg");
+        JLabel bgLabel = createBackgroundLabel("C:/Users/Ayesha/Desktop/khushi project/memory game/levelimage.jpg");
         layeredPane.add(bgLabel, Integer.valueOf(0));
 
         JPanel panel = new JPanel(new GridBagLayout());
@@ -165,7 +165,7 @@ public class MiniEmojiMemoryGame extends JFrame {
     Collections.shuffle(list);
     toRemember = list.subList(0, emojiCount);
 
-    JLabel bgLabel = createBackgroundLabel("C:/Users/Ayesha/Desktop/khushi project/countdown.jpeg");
+    JLabel bgLabel = createBackgroundLabel("C:/Users/Ayesha/Desktop/khushi project/memory game/countdown.jpeg");
     layeredPane.add(bgLabel, Integer.valueOf(0));
 
     JPanel panel = new JPanel();
@@ -223,7 +223,7 @@ public class MiniEmojiMemoryGame extends JFrame {
     private void showAnswerOptions(int emojiCount) {
         layeredPane.removeAll();
 
-        JLabel bgLabel = createBackgroundLabel("C:/Users/Ayesha/Desktop/khushi project/emojisselection.jpeg");
+        JLabel bgLabel = createBackgroundLabel("C:/Users/Ayesha/Desktop/khushi project/memory game/emojisselection.jpeg");
         layeredPane.add(bgLabel, Integer.valueOf(0));
 
         JPanel panel = new JPanel(new BorderLayout(20, 20));
@@ -324,7 +324,7 @@ public class MiniEmojiMemoryGame extends JFrame {
             add(layeredPane);
 
             JLabel bgLabel = new JLabel(new ImageIcon(new ImageIcon(
-                    "C:/Users/Ayesha/Desktop/khushi project/scorecard.jpeg")
+                    "C:/Users/Ayesha/Desktop/khushi project/memory game/scorecard.jpeg")
                     .getImage().getScaledInstance(getWidth(), getHeight(), Image.SCALE_SMOOTH)));
             bgLabel.setBounds(0,0,getWidth(),getHeight());
             layeredPane.add(bgLabel, Integer.valueOf(0));
@@ -369,7 +369,7 @@ public class MiniEmojiMemoryGame extends JFrame {
         setLayout(new BorderLayout());
 
         // Background label with image
-        ImageIcon bgIcon = new ImageIcon("C:/Users/Ayesha/Desktop/khushi project/emojisselection.jpeg");
+        ImageIcon bgIcon = new ImageIcon("C:/Users/Ayesha/Desktop/khushi project/memory game/emojisselection.jpeg");
         Image img = bgIcon.getImage().getScaledInstance(800, 600, Image.SCALE_SMOOTH);
         JLabel bgLabel = new JLabel(new ImageIcon(img));
         bgLabel.setLayout(new GridBagLayout()); // allows adding components on top
@@ -390,6 +390,6 @@ public class MiniEmojiMemoryGame extends JFrame {
 }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new MiniEmojiMemoryGame().setVisible(true));
+        SwingUtilities.invokeLater(() -> new EmojiMemoryGame().setVisible(true));
     }
 }
