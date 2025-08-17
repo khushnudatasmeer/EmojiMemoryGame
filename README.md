@@ -14,11 +14,12 @@ A fun **Java Swing-based memory game** where players memorize and match sequence
 ---
 
 ## **Screenshots**
-![Start Screen]("C:\Users\Ayesha\Desktop\khushi project\memory game\startscreen.png")  
-![Level Screen]("C:\Users\Ayesha\Desktop\khushi project\memory game\levelsscreen.png")  
-![Memorise Screen]("C:\Users\Ayesha\Desktop\khushi project\memory game\memorisescreen.png")  
-![Selectemoji Screen]("C:\Users\Ayesha\Desktop\khushi project\memory game\selectemojiscreen.png")  
-![Scorecard Screen]("C:\Users\Ayesha\Desktop\khushi project\memory game\scorecard.png") 
+![Start Screen](images/startscreen.png)  
+![Level Screen](images/levelsscreen.png)  
+![Memorise Screen](images/memorisescreen.png)  
+![Select Emoji Screen](images/selectemojiscreen.png)  
+![Scorecard Screen](images/scorecard.png)
+
 
 
 ---
