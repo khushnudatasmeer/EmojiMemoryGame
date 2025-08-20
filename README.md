@@ -36,11 +36,11 @@ git clone https://github.com/khushnudatasmeer/EmojiMemoryGame.git
 ```
 4.Compile the Java files:
 ```
-  javac MiniEmojiMemoryGame.java
+  javac EmojiMemoryGame.java
 ```
 5. Run the game:
 ```
-   java MiniEmojiMemoryGame
+   java EmojiMemoryGame
 ```
 ## **Folder Structure**
 ```bash
