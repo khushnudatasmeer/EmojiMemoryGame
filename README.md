@@ -28,7 +28,7 @@ A fun **Java Swing-based memory game** where players memorize and match sequence
 1. Make sure you have **Java JDK** installed (Java 8 or higher).  
 2. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/EmojiMemoryGame.git
+git clone https://github.com/khushnudatasmeer/EmojiMemoryGame.git
 ```
 3.Navigate to the project folder:
 ```
